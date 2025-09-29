@@ -30,10 +30,10 @@ const Portfolio = () => {
       },
     },
     {
-      title: "Fourwell Magazine Store",
+      title: "Fourwall Magazine Store",
       image: Fourwell,
       description:
-        "Developed Fourwell Magazine Store, an online platform that makes it easy for readers to explore, discover, and purchase magazines. Designed with WordPress and Elementor, it delivers a clean, responsive, and engaging experience that connects readers with the stories they love",
+        "Developed Fourwall Magazine Store, an online platform that makes it easy for readers to explore, discover, and purchase magazines. Designed with WordPress and Elementor, it delivers a clean, responsive, and engaging experience that connects readers with the stories they love",
       tags: ["Woo-commerce", "Elementor", "Wordpress"],
       links: {
         demo: "https://store.fourwallmag.com.ng/",
