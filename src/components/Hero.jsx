@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import portfolioProfile from "../assets/profilePic.jpg"
+import SplitText from "../utils/SplitText";
 
 const Hero = () => {
   const YOUR_NAME = "Dikachi Agoh";
@@ -34,13 +35,23 @@ const Hero = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true }}
-                className="mt-4 text-4xl leading-tight font-extrabold sm:text-5xl md:text-6xl"
+                className="mt-4 text-4xl leading-tight font-extrabold sm:text-5xl md:text-6xl flex flex-wrap items-baseline"
               >
-                I’m{" "}
-                <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
-                  {YOUR_NAME}
-                </span>
+                <span>I’m&nbsp;</span>
+                <SplitText
+                  text={YOUR_NAME}
+                  className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent"
+                  delay={100}
+                  duration={0.6}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                  rootMargin="-100px"
+                />
               </motion.h1>
+
               <motion.p
                 variants={fadeUp}
                 initial="hidden"
