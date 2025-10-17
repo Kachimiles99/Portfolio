@@ -63,7 +63,10 @@ const Contact = () => {
 
   return (
     <div>
-      <section id="contact" className="py-20 border-t border-white/5">
+      <section
+        id="contact"
+        className="py-20 border-t border-white/5 relative z-50"
+      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {sectionTitle("Contact", "Let’s build something great together")}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
