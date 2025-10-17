@@ -80,7 +80,7 @@ const Hero = () => {
                     e.preventDefault();
                     scrollToId("portfolio");
                   }}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 font-semibold text-zinc-100 transition hover:bg-white/10"
+                  className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 font-semibold text-zinc-100 transition hover:bg-white/10 hover:translate-y-[-2px]"
                 >
                   View Work
                 </a>
